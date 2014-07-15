@@ -9,7 +9,8 @@ describe PrimeFactors do
     [4, [2, 2]],
     [5, [5]],
     [6, [2, 3]],
-    [7, [7]]     
+    [7, [7]],
+    [8, [2, 2, 2]]      
   ].each do |number, expected|
    	it "finds all prime factors for #{number.to_s}" do
    	  expect(PrimeFactors.of(number)).to eq(expected)
